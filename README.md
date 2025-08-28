@@ -14,8 +14,8 @@ We need Python library of "tabulate" to visualize the results in a good shape. P
 ## Running and testing your code
 
 - To run tests, from the command-line shell, you can run
-  + `pytest test_main.py` will run all tests
-  + `pytest test_main.py::test_one` will just run `test_one`
+  + `python3 -m pytest test_main.py` will run all tests
+  + `python3 -m pytest test_main.py::test_one` will just run `test_one`
   + We recommend running one test at a time as you are debugging.
 
 ## Turning in your work
