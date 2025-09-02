@@ -61,3 +61,34 @@ We'll compare the running times of `linear_search` and `binary_search` empirical
   + What is worst-case complexity of searching a list of $n$ elements $k$ times using linear search? **TODO: your answer goes here**
   + For binary search? **TODO: your answer goes here**
   + For what values of $k$ is it more efficient to first sort and then use binary search versus just using linear search without sorting? **TODO: your answer goes here**
+
+<br><br>
+
+T(Sort + Binary Search) $\stackrel{?}{<}$ T(Linear Search)  
+
+
+$ n^2 + k* \mathrm{lg}n \stackrel{?}{<} k * n$
+
+
+if $k=n$
+
+$ n^2 + n \mathrm{lg}n > n^2$ $\Rightarrow$ Linear Search is faster
+
+
+if $k=n^2$
+
+$ n^2 + n^2 \mathrm{lg}n < n^3$ $\Rightarrow$ Sort + Binary Search is faster
+
+
+if $k=n \mathrm{lg}n$
+
+$ n^2 + n \mathrm{lg}^2 n < n^2 \mathrm{lg}n$ $\Rightarrow$ Sort + Binary Search is faster
+
+or, solve for $k$
+
+$ n^2 + k* \mathrm{lg}n \stackrel{?}{<} k * n$  
+$n^2 = k*n - k * \mathrm{lg}n$  
+$n^2 = k(n- \mathrm{lg}n)$  
+$\frac{n^2}{n- \mathrm{lg}n} = k$
+
+So, Sort + Binary Search is faster when $ k > \frac{n^2}{n- \mathrm{lg}n} $
