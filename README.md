@@ -1,6 +1,6 @@
 # CMPS 2200  Recitation 01
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):**_Jiarui Li  
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate asymptotic complexity. Additionally, we will get familiar with the various technologies we'll use for collaborative coding.
@@ -14,8 +14,8 @@ We need Python library of "tabulate" to visualize the results in a good shape. P
 ## Running and testing your code
 
 - To run tests, from the command-line shell, you can run
-  + `pytest test_main.py` will run all tests
-  + `pytest test_main.py::test_one` will just run `test_one`
+  + `python3 -m pytest test_main.py` will run all tests
+  + `python3 -m pytest test_main.py::test_one` will just run `test_one`
   + We recommend running one test at a time as you are debugging.
 
 ## Turning in your work
